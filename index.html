@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QUADRO FOLIO | The 4'rce Dollification</title>
+  
+  <!-- Premium Google Typography -->
+  <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- STICKY TOP TAB BAR / NAVIGATION MENU -->
+  <header class="navbar">
+    <a href="#" class="logo">
+      <i class="fa-solid fa-sparkles"></i> The 4'rce Dollification
+    </a>
+    <ul class="nav-links">
+      <li><a href="#team" id="nav-team">Team</a></li>
+      <li><a href="#about-detail" id="nav-about">About Members</a></li>
+      <li><a href="#services" id="nav-services">Services</a></li>
+      <li><a href="#contact" id="nav-contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-badge">Welcome to Our Creative Hub</div>
+    <h1>One Vision, <span class="highlight">One Mission</span></h1>
+    <p>We are a passionate team of students who enjoy designing, developing, and creating creative digital experiences with a simple, modern, and colorful style.</p>
+    <div class="hero-actions">
+      <a href="#team" class="btn btn-primary">Meet The Team <i class="fa-solid fa-arrow-down"></i></a>
+      <a href="#services" class="btn btn-secondary">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- TEAM SECTION -->
+  <section id="team" class="team-section">
+    <div class="section-title">
+      <h2>Meet Our Team</h2>
+      <p>Click on any picture to view detailed background & expertise</p>
+    </div>
+
+    <div class="team-grid">
+
+      <!-- ME (ORALLO) -->
+      <div class="team-card featured" onclick="selectMember('ORALLO')">
+        <div class="card-image">
+          <img src="ERIELORALLO.jpg" alt="Prince Eriel Orallo" onerror="this.onerror=null; this.src='https://placehold.co/400x500/fbcfe8/db2777?text=Prince+Eriel+Orallo';">
+          <span class="role-badge highlight-badge">Lead Developer | UI/UX Designer</span>
+        </div>
+        <div class="card-content">
+          <h3>Prince Eriel Orallo</h3>
+          <p class="tagline">Turning complex ideas into scalable, clean code.</p>
+          <div class="skills">
+            <span>C++</span>
+            <span>HTML/CSS</span>
+            <span>UI/UX</span>
+            <span>Adobe Photoshop</span>
+          </div>
+          <div class="card-socials">
+            <a href="#" aria-label="GitHub" onclick="event.stopPropagation()"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn" onclick="event.stopPropagation()"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CUARESMA -->
+      <div class="team-card" onclick="selectMember('CUARESMA')">
+        <div class="card-image">
+          <img src="CUARESMAJOHN.jpg" alt="Winston John Cuaresma" onerror="this.onerror=null; this.src='https://placehold.co/400x500/fbcfe8/db2777?text=Winston+John+Cuaresma';">
+          <span class="role-badge">UI/UX Designer</span>
+        </div>
+        <div class="card-content">
+          <h3>Winston John Cuaresma</h3>
+          <p class="tagline">Crafting delightful & accessible digital interfaces.</p>
+          <div class="skills">
+            <span>Figma</span>
+            <span>Design Systems</span>
+            <span>Wireframing</span>
+          </div>
+          <div class="card-socials">
+            <a href="#" aria-label="LinkedIn" onclick="event.stopPropagation()"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Dribbble" onclick="event.stopPropagation()"><i class="fa-brands fa-dribbble"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BALADAD -->
+      <div class="team-card" onclick="selectMember('BALADAD')">
+        <div class="card-image">
+          <img src="BALADADJIMARE.jpg" alt="Jimare Baladad" onerror="this.onerror=null; this.src='https://placehold.co/400x500/fbcfe8/db2777?text=Jimare+Baladad';">
+          <span class="role-badge">Brand Strategist</span>
+        </div>
+        <div class="card-content">
+          <h3>Jimare Baladad</h3>
+          <p class="tagline">Connecting brands with audiences through strategy.</p>
+          <div class="skills">
+            <span>Marketing</span>
+            <span>Content Strategy</span>
+            <span>SEO</span>
+          </div>
+          <div class="card-socials">
+            <a href="#" aria-label="LinkedIn" onclick="event.stopPropagation()"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram" onclick="event.stopPropagation()"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ELLORIN -->
+      <div class="team-card" onclick="selectMember('ELLORIN')">
+        <div class="card-image">
+          <img src="ELLORINSEBASTIAN.jpg" alt="Sebastian Andrew Ellorin" onerror="this.onerror=null; this.src='https://placehold.co/400x500/fbcfe8/db2777?text=Sebastian+Andrew+Ellorin';">
+          <span class="role-badge">Mobile Developer</span>
+        </div>
+        <div class="card-content">
+          <h3>Sebastian Andrew Ellorin</h3>
+          <p class="tagline">Building smooth, cross-platform mobile apps.</p>
+          <div class="skills">
+            <span>Flutter</span>
+            <span>React Native</span>
+            <span>iOS/Android</span>
+          </div>
+          <div class="card-socials">
+            <a href="#" aria-label="GitHub" onclick="event.stopPropagation()"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn" onclick="event.stopPropagation()"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT / MEMBER PROFILES -->
+  <section id="about-detail">
+    <div class="about-details-section">
+      <div class="section-title">
+        <h2>About Our Team Members</h2>
+        <p>In-depth profiles, background, and specialized skillsets</p>
+      </div>
+
+      <!-- Tab Buttons Navigation -->
+      <div class="member-switcher">
+        <button class="tab-btn active" id="tab-ORALLO" onclick="switchTab('ORALLO')">
+          <img src="ERIELORALLO.jpg" alt="Prince Eriel Orallo" onerror="this.onerror=null; this.src='https://placehold.co/100x100/fbcfe8/db2777?text=PO';">
+          Prince Eriel Orallo
+        </button>
+        <button class="tab-btn" id="tab-CUARESMA" onclick="switchTab('CUARESMA')">
+          <img src="CUARESMAJOHN.jpg" alt="Winston John Cuaresma" onerror="this.onerror=null; this.src='https://placehold.co/100x100/fbcfe8/db2777?text=WC';">
+          Winston John Cuaresma
+        </button>
+        <button class="tab-btn" id="tab-BALADAD" onclick="switchTab('BALADAD')">
+          <img src="BALADADJIMARE.jpg" alt="Jimare Baladad" onerror="this.onerror=null; this.src='https://placehold.co/100x100/fbcfe8/db2777?text=JB';">
+          Jimare Baladad
+        </button>
+        <button class="tab-btn" id="tab-ELLORIN" onclick="switchTab('ELLORIN')">
+          <img src="ELLORINSEBASTIAN.jpg" alt="Sebastian Andrew Ellorin" onerror="this.onerror=null; this.src='https://placehold.co/100x100/fbcfe8/db2777?text=SE';">
+          Sebastian Andrew Ellorin
+        </button>
+      </div>
+
+      <!-- ME (ORALLO) -->
+      <div class="member-profile active" id="profile-ORALLO">
+        <div class="profile-sidebar">
+          <img src="ERIELORALLO.jpg" alt="Prince Eriel Orallo" onerror="this.onerror=null; this.src='https://placehold.co/200x200/fbcfe8/db2777?text=Prince+Eriel+Orallo';">
+          <h3>Prince Eriel Orallo</h3>
+          <p class="role">Lead Developer & UI/UX Designer</p>
+          <div class="sidebar-stats">
+            <div class="stat-item">
+              <h4>3+</h4>
+              <p>Years Exp.</p>
+            </div>
+            <div class="stat-item">
+              <h4>5+</h4>
+              <p>Projects</p>
+            </div>
+            <div class="stat-item">
+              <h4>100%</h4>
+              <p>Dedication</p>
+            </div>
+          </div>
+          <a href="mailto:oralloprinceeriel@gmail.com" class="btn btn-primary" style="width: 100%; justify-content: center;">Contact Prince</a>
+        </div>
+
+        <div class="profile-details">
+          <!-- About Me -->
+          <div class="info-card">
+            <h3><i class="fa-solid fa-user-gear"></i> About Me</h3>
+            <p class="bio">A Bachelor of Science in Information Technology student who’s passionate about technology, software development, and UI/UX design. Aspiring to become a Lead Developer and professional UI/UX Designer, with a passion for building user-friendly digital experiences and turning creative ideas into innovative solutions. Continuously improving programming, design, leadership, and problem-solving skills through personal projects and hands-on learning.</p>
+          </div>
+
+          <!-- Skills -->
+          <div class="info-card">
+            <h3><i class="fa-solid fa-code"></i> Skills</h3>
+            <div class="skill-category">
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Basic HTML</span>
+              <span class="skill-tag">Basic CSS</span>
+              <span class="skill-tag">Microsoft Office</span>
+              <span class="skill-tag">SPSS & Data Analysis</span>
+              <span class="skill-tag">Canva</span>
+              <span class="skill-tag">CapCut</span>
+              <span class="skill-tag">DaVinci Resolve</span>
+              <span class="skill-tag">Adobe Photoshop</span>
+              <span class="skill-tag">Adobe Lightroom</span>
+              <span class="skill-tag">Basic Computer Troubleshooting</span>
+            </div>
+          </div>
+
+          <!-- Educ & Work Ex -->
+          <div class="details-grid">
+            <div class="detail-box">
+              <h4><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+              <ul class="timeline-list">
+                <li>
+                  <strong>University of Eastern Pangasinan</strong>
+                  <span>Bachelor of Science in Information Technology (2026)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="detail-box">
+              <h4><i class="fa-solid fa-briefcase"></i> Work Experience</h4>
+              <ul class="timeline-list">
+                <li>
+                  <strong>WCC Aviation Company Inc. Binalonan</strong>
+                  <span>Work Immersion Trainee (2025)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Achs & Certs -->
+          <div class="info-card">
+            <h3><i class="fa-solid fa-award"></i> Achievements & Certificates</h3>
+            <ul class="cert-list">
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Student Technologists and Entrepreneurs of the Philippines (STEP-HE)</strong><br><small>Auditor | Juan G. Macaraeg National High School (2024–2026)</small></div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Municipal Leadership Training</strong><br><small>Bugayong Integrated School (2025)</small></div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Division Leadership Training</strong><br><small>Manaoag National High School (2025)</small></div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Disaster Risk, Readiness, and Reduction Management</strong><br><small>PDRRMO Lingayen, Pangasinan (2025)</small></div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Technolympics Food Processing Competition</strong><br><small>School Representative (2023–2025)</small></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CUARESMA -->
+      <div class="member-profile" id="profile-CUARESMA">
+        <div class="profile-sidebar">
+          <img src="CUARESMAJOHN.jpg" alt="Winston John Cuaresma" onerror="this.onerror=null; this.src='https://placehold.co/200x200/fbcfe8/db2777?text=Winston+John+Cuaresma';">
+          <h3>Winston John Cuaresma</h3>
+          <p class="role">UI/UX Designer</p>
+          <div class="sidebar-stats">
+            <div class="stat-item">
+              <h4>2+</h4>
+              <p>Years Exp.</p>
+            </div>
+            <div class="stat-item">
+              <h4>30+</h4>
+              <p>Designs</p>
+            </div>
+            <div class="stat-item">
+              <h4>2+</h4>
+              <p>Awards</p>
+            </div>
+          </div>
+          <a href="mailto:cuaresmawinstonjohn@gmail.com" class="btn btn-primary" style="width: 100%; justify-content: center;">Contact Winston</a>
+        </div>
+
+        <div class="profile-details">
+          <!-- About Me -->
+          <div class="info-card">
+            <h3><i class="fa-solid fa-user-gear"></i> About Me</h3>
+            <p class="bio">A Bachelor of Science in Information Technology student who is passionate about technology, software development, and UI/UX Design. Aspiring to become a professional UI/UX Designer, with a strong interest in creating modern, visually appealing, and user-friendly digital experiences. Dedicated to learning new technologies, improving programming and design skills, and transforming creative ideas into meaningful digital solutions. Continuously developing technical abilities, creativity, and problem-solving skills through academic activities, personal projects, and hands-on learning. Motivated to explore new opportunities, gain valuable experience, and grow into a skilled IT professional who can create innovative designs and practical solutions that meet users’ needs.</p>
+          </div>
+
+          <!-- Skills -->
+          <div class="info-card">
+            <h3><i class="fa-solid fa-pen-ruler"></i> Skills</h3>
+            <div class="skill-category">
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Wireframing</span>
+              <span class="skill-tag">UI/UX Prototyping</span>
+              <span class="skill-tag">Design Systems</span>
+              <span class="skill-tag">HTML & CSS Layouts</span>
+              <span class="skill-tag">User Research</span>
+              <span class="skill-tag">Adobe Photoshop</span>
+            </div>
+          </div>
+
+          <!-- Educ & Work Exp -->
+          <div class="details-grid">
+            <div class="detail-box">
+              <h4><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+              <ul class="timeline-list">
+                <li>
+                  <strong>University of Eastern Pangasinan</strong>
+                  <span>Bachelor of Science in Information Technology (2026)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="detail-box">
+              <h4><i class="fa-solid fa-briefcase"></i> Work Experience</h4>
+              <ul class="timeline-list">
+                <li>
+                  <strong>Laoac Police Station</strong>
+                  <span>Work Immersion Trainee (2025)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Achs & Certs -->
+          <div class="info-card">
+            <h3><i class="fa-solid fa-award"></i> Achievements & Certificates</h3>
+            <ul class="cert-list">
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>UI/UX Design Certification</strong><br><small>Online Tech Academy (2025)</small></div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Student Leadership Workshop Participant</strong><br><small>Regional Youth Tech Summit (2024)</small></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- BALADAD -->
+      <div class="member-profile" id="profile-BALADAD">
+        <div class="profile-sidebar">
+          <img src="BALADADJIMARE.jpg" alt="Jimare Baladad" onerror="this.onerror=null; this.src='https://placehold.co/200x200/fbcfe8/db2777?text=Jimare+Baladad';">
+          <h3>Jimare Baladad</h3>
+          <p class="role">Brand Strategist</p>
+          <div class="sidebar-stats">
+            <div class="stat-item">
+              <h4>2+</h4>
+              <p>Years Exp.</p>
+            </div>
+            <div class="stat-item">
+              <h4>10+</h4>
+              <p>Campaigns</p>
+            </div>
+            <div class="stat-item">
+              <h4>95%</h4>
+              <p>Satisfaction</p>
+            </div>
+          </div>
+          <a href="mailto:jimarebaladad@gmail.com" class="btn btn-primary" style="width: 100%; justify-content: center;">Contact Jimare</a>
+        </div>
+
+        <div class="profile-details">
+          <!-- About Me -->
+          <div class="info-card">
+            <h3><i class="fa-solid fa-user-gear"></i> About Me</h3>
+            <p class="bio">A Bachelor of Science in Information Technology student who is passionate about technology, creativity, and digital innovation. As an aspiring brand strategist, I am committed to expanding my knowledge of branding, marketing, and digital communication while developing my creative thinking, analytical, and problem-solving skills. I am eager to gain valuable experience through academic projects, hands-on activities, and learning opportunities that will strengthen my understanding of brand development and audience engagement. My goal is to become a skilled and innovative brand strategist who can build meaningful brand identities, develop effective strategies, and create impactful connections between brands and their audiences.</p>
+          </div>
+
+          <!-- Skills -->
+          <div class="info-card">
+            <h3><i class="fa-solid fa-bullhorn"></i> Skills</h3>
+            <div class="skill-category">
+              <span class="skill-tag">Basic Html</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">Brand Strategy</span>
+              <span class="skill-tag">Content Creation</span>
+              <span class="skill-tag">Social Media Management</span>
+              <span class="skill-tag">Basic SEO</span>
+              <span class="skill-tag">Market Research</span>
+            </div>
+          </div>
+
+          <!-- Educ & Work Exp -->
+          <div class="details-grid">
+            <div class="detail-box">
+              <h4><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+              <ul class="timeline-list">
+                <li>
+                  <strong>University of Eastern Pangasinan</strong>
+                  <span>Bachelor of Science in Information Technology (2026)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="detail-box">
+              <h4><i class="fa-solid fa-briefcase"></i> Work Experience</h4>
+              <ul class="timeline-list">
+                <li>
+                  <strong>Laoac Town Hall</strong>
+                  <span>Work Immersion Trainee (2025)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Achs & Certs -->
+          <div class="info-card">
+            <h3><i class="fa-solid fa-award"></i> Achievements & Certificates</h3>
+            <ul class="cert-list">
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Digital Marketing Essentials Certificate</strong><br><small>Youth Tech Learning Hub (2025)</small></div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Campus Journalism & Content Creation Award</strong><br><small>School Publication (2024)</small></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ELLORIN -->
+      <div class="member-profile" id="profile-ELLORIN">
+        <div class="profile-sidebar">
+          <img src="ELLORINSEBASTIAN.jpg" alt="Sebastian Andrew Ellorin" onerror="this.onerror=null; this.src='https://placehold.co/200x200/fbcfe8/db2777?text=Sebastian+Andrew+Ellorin';">
+          <h3>Sebastian Andrew Ellorin</h3>
+          <p class="role">Mobile Developer</p>
+          <div class="sidebar-stats">
+            <div class="stat-item">
+              <h4>1+</h4>
+              <p>Years Exp.</p>
+            </div>
+            <div class="stat-item">
+              <h4>2+</h4>
+              <p>Apps Built</p>
+            </div>
+            <div class="stat-item">
+              <h4>85%</h4>
+              <p>Clean Code</p>
+            </div>
+          </div>
+          <a href="mailto:ellorinsebastian3@gmail.com" class="btn btn-primary" style="width: 100%; justify-content: center;">Contact Sebastian</a>
+        </div>
+
+        <div class="profile-details">
+          <!-- About Me -->
+          <div class="info-card">
+            <h3><i class="fa-solid fa-user-gear"></i> About Me</h3>
+            <p class="bio">A Bachelor of Science in Information Technology student with a strong passion for technology, programming, and mobile application development. I enjoy combining creativity and technical problem-solving to create functional, user-friendly, and innovative digital solutions. I am committed to continuously improving my programming skills, exploring new technologies, and gaining practical experience through hands-on projects. My goal is to become a skilled and responsible mobile developer who can create innovative applications that provide meaningful and efficient solutions to users' needs.</p>
+          </div>
+
+          <!-- Skills -->
+          <div class="info-card">
+            <h3><i class="fa-solid fa-mobile-screen-button"></i> Skills</h3>
+            <div class="skill-category">
+              <span class="skill-tag">Basic Html</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">Mobile UI Development</span>
+              <span class="skill-tag">Git Version Control</span>
+              <span class="skill-tag">REST API Integration</span>
+            </div>
+          </div>
+
+          <!-- Educ & Work Exp-->
+          <div class="details-grid">
+            <div class="detail-box">
+              <h4><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+              <ul class="timeline-list">
+                <li>
+                  <strong>University of Eastern Pangasinan</strong>
+                  <span>Bachelor of Science in Information Technology (2026)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="detail-box">
+              <h4><i class="fa-solid fa-briefcase"></i> Work Experience</h4>
+              <ul class="timeline-list">
+                <li>
+                  <strong>Lananpin Elementary School</strong>
+                  <span>Work Immersion Trainee (2025)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Achs & Certs -->
+          <div class="info-card">
+            <h3><i class="fa-solid fa-award"></i> Achievements & Certificates</h3>
+            <ul class="cert-list">
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Mobile App Development Bootcamp</strong><br><small>Tech Training Center (2025)</small></div></li>
+              <li><i class="fa-solid fa-circle-check"></i> <div><strong>Innovation & Hackathon Participant</strong><br><small>Regional IT Challenge (2024)</small></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="services-section">
+    <div class="section-title">
+      <h2>What We Build Together</h2>
+      <p>Combining our expertise to deliver end-to-end digital excellence</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon-box"><i class="fa-solid fa-palette"></i></div>
+        <h3>Creative Design</h3>
+        <p>User-centered web and mobile app interfaces with soft aesthetics and strong brand personality.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+        <h3>Web Development</h3>
+        <p>Responsive, fast, and interactive websites optimized for performance and conversion.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon-box"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <h3>App Development</h3>
+        <p>Native and cross-platform mobile apps built for seamless user experiences and engagement.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon-box"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Brand Growth</h3>
+        <p>Data-driven marketing campaigns and cohesive digital strategies tailored to your target audience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact-section">
+    <div class="contact-card">
+      <h2>Have a Project in Mind?</h2>
+      <p>Let's collaborate and bring your ideas to life with our combined expertise.</p>
+      <a href="mailto:the4rcedollification@example.com" class="btn btn-primary">Start a Project <i class="fa-solid fa-paper-plane"></i></a>
+    </div>
+  </section>
+
+  <script>
+    // Tab Switching Functionality
+    function switchTab(memberId) {
+      // Hide all profiles
+      document.querySelectorAll('.member-profile').forEach(profile => {
+        profile.classList.remove('active');
+      });
+
+      // Remove active class from buttons
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+
+      // Activate selected profile & button
+      const selectedProfile = document.getElementById(`profile-${memberId}`);
+      const selectedTab = document.getElementById(`tab-${memberId}`);
+
+      if (selectedProfile) selectedProfile.classList.add('active');
+      if (selectedTab) selectedTab.classList.add('active');
+    }
+
+    // Scroll to detail section & open tab
+    function selectMember(memberId) {
+      switchTab(memberId);
+      const detailSection = document.getElementById('about-detail');
+      if (detailSection) {
+        detailSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    // Intersection Observer to highlight top navbar menu items on scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-links a');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 120;
+          const sectionHeight = section.clientHeight;
+          if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active-link');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active-link');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
